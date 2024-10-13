@@ -1,0 +1,100 @@
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #213547;
+  background-color: #fafafa;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:active, .button.active {
+  background-color: #868bff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.keyboard .r1 {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 25px;
+}
+
+.keyboard .r2 {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 25px;
+}
+
+.keyboard .r3 {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 25px;
+}
+
+.keyboard .r4 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 25px;
+}
+
+.keyboard .r5 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.keyboard .r1,
+.keyboard .r2,
+.keyboard .r3,
+.keyboard .r4,
+.keyboard .r5 {
+  margin: 5px 0;
+}
+
+.keyboard .r1 .button:nth-child(1) {
+  width: 100px;
+}
+
+.r5 .button {
+  width: 100px;
+}
+
+.r5 .button:nth-child(5) {
+  width: 525px;
+}
+
+.button[letter="TAB"],
+.button[letter="CAPS"],
+.button[letter="SHIFT"],
+.button[letter="CTRL"],
+.button[letter="ALT"],
+.button[letter="ENTER"],
+.button[letter="Fn"],
+.button[letter="WIN"] {
+  width: 80px;
+}
